@@ -75,7 +75,7 @@ while len(word_letters)>0 and lives > 0:
     print(hangman_stages[lives])
     display_letters = [letter if letter in guessed_letters else '_ ' for letter in word]
     print("Current word: ","".join(display_letters))
-    print("Lives left: {lives}")
+    print("Lives left: ", lives)
 
     guess = input("Enter a letter: ").lower()
 
@@ -95,3 +95,4 @@ if lives == 0:
     print("You lost the game! The word was: ", word)
 else:
     print("Congratulations!! You won")
+
